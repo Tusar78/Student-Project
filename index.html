@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Heading -->
+    <div class="container-fluid heading-bg">
+        <div class="container">
+            <div class="heading">
+                <div class="brand">
+                    <img src="assets/images/logo.png" alt="Website Logo">
+                </div>
+
+                <div class="navigation">
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Service</a></li>
+                        <li><a href="#">Product</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">Sign In</a></li>
+                    </ul>
+                </div>
+
+                <div class="toggle">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+            </div>
+
+            <div class="nav" style="display: none;">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Service</a></li>
+                    <li><a href="#">Product</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Sign In</a></li>
+                </ul>
+            </div>
+
+            <div class="headInfo">
+                <div class="headInfo_title">
+                    <h2>Education for all</h2>
+                    <p>A bank is a financial institution that accepts deposits from the 
+                        public and creates credit. For all of your financial needs </p>
+                    <a href="#">Read More</a>
+                </div>
+
+                <div class="headInfo_img">
+                    <img src="assets/images/headpng.png" alt="Head Image">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Admission Section -->
+    <div class="container-fluid">
+        <div class="container">
+            <div class="admission-section">
+                <div class="admission-section_email">
+                    <div class="wrap">
+                        <h3>Apply for admission</h3>
+                        <p>make it more simple!</p>
+                        <div class="send-mail">
+                            <form>
+                                <input type="email">
+                                <button><img src="assets/images/admbtnLogo.png" alt="Admission button logo"></button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="admission-section_testimonial">
+                    <p>"Before Coursecity, I was working two minimum wage jobs. Now,
+                        & new life!"I learned most of my programming skills and
+                        hrough self-study and the material available.</p>
+                    <span>Stephanie Magion</span>
+                    <div class="dot">
+                        <img src="assets/images/doticon.png" alt="Dot Icon">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Welcome Section  -->
+    <div class="container-fluid">
+        <div class="container">
+            <div class="welcome">
+                <div class="welcome-img">
+                    <img src="assets/images/welcome1.png" alt="Welcome">
+                </div>
+                <div class="welcome-text">
+                    <h2>Welcome to Eduin university,
+                        Constant self-improvement 
+                        as an instructor.</h2>
+                    <p>Education City is initiative of our Qatar Foundation for Education, Science and Community Development. Education City initiative of our Qatar Foundation for Education, Science and Community Development.</p>
+                    <p>Education City is initiative of our Qatar Foundation for Education, Science and Community Development. Education City initiative of our Qatar Foundation for Education.</p>
+                    <a href="#">Get Started</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+    <!-- Welcome 2 Section  -->
+    <div class="container-fluid">
+        <div class="container">
+            <div class="welcome">                
+                <div class="welcome-text">
+                    <h2>Welcome to Eduin university,
+                        Constant self-improvement 
+                        as an instructor.</h2>
+                    <p>Education City is initiative of our Qatar Foundation for Education, Science and Community Development. Education City initiative of our Qatar Foundation for Education, Science and Community Development.</p>
+                    <p>Education City is initiative of our Qatar Foundation for Education, Science and Community Development. Education City initiative of our Qatar Foundation for Education.</p>
+                    <a href="#">Get Started</a>
+                </div>
+                <div class="welcome-img">
+                    <img src="assets/images/welcome2.png" alt="Welcome">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Service Section  -->
+    <div class="container-fluid">
+        <div class="container">
+            <div class="service-area">
+                <div class="service">
+                    <div class="icon">
+                        <img src="assets/images/serve1.png" alt="Service Icon">
+                    </div>
+                    <h2>Global Student</h2>
+                    <p>Education City is initiative of our Qatar Foundation for Education, Science Community Development. </p>
+                </div>   
+
+                <div class="service">
+                    <div class="icon">
+                        <img src="assets/images/serve2.png" alt="Service Icon">
+                    </div>
+                    <h2>Global Student</h2>
+                    <p>Education City is initiative of our Qatar Foundation for Education, Science Community Development. </p>
+                </div>  
+
+                <div class="service">
+                    <div class="icon">
+                        <img src="assets/images/serve3.png" alt="Service Icon">
+                    </div>
+                    <h2>Global Student</h2>
+                    <p>Education City is initiative of our Qatar Foundation for Education, Science Community Development. </p>
+                </div>               
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer  -->
+    <div class="container-fluid">
+        <div class="container">
+            <div class="footer">
+                <div class="copyright">
+                    <p>&copy; 2019 Mercury Design. All Rights Reserved </p>
+                </div>
+                <div class="submenu">
+                    <a href="#">About Company</a>
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Help Center</a>
+                    <a href="#">Terms</a>
+                    <a href="#">Site Map</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script>
+        const toggle = document.querySelector('.toggle');
+        const nav = document.querySelector('.nav');
+        toggle.addEventListener('click', () => {
+            if (nav.style.display == `none`){
+                nav.style.display = `block`;
+            } else {
+                nav.style.display = `none`;
+            }
+            
+        })
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,410 @@
+/* Import Font From Google Fonts  */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Raleway:wght@300;400;500;600;700&display=swap');
+
+/* Reset Code */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+}
+
+ul, ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: normal;
+}
+
+/* Set Width  */
+.container-fluid {
+    width: 100%;
+}
+
+.container {
+    width: 1170px;
+    margin: 0 auto;
+}
+
+/* Heading  */
+.heading-bg {
+    background-image: url(assets/images/banner.png);
+    width: 100%;
+    background-size: cover;
+    background-position: center center;
+}
+
+.heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 25px;
+}
+
+.heading .brand img {
+    width: 120px;
+}
+
+.heading .navigation ul {
+    display: flex;
+}
+
+.heading .navigation ul li a{
+    display: block;
+    padding: 10px 18px;
+    color: #fff;
+    font-size: 18px;
+}
+
+.heading .navigation ul li:last-child a{
+    background-color: #ff5f60;
+    border-radius: 25px;
+    margin-left: 60px;
+}
+
+.nav {
+    width: 100%;
+    background-color: #fff;
+    text-align: center;
+}
+
+.nav ul li a {
+    display: block;
+    padding: 10px;
+    color: #333;
+}
+
+.toggle {
+    display: none;
+    cursor: pointer;
+}
+
+.toggle div{
+    width: 30px;
+    height: 4px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    background-color: #fff;
+}
+
+.headInfo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 70px 0;
+}
+
+.headInfo .headInfo_title {
+    width: 40%;
+}
+
+.headInfo .headInfo_title h2{
+    color: #fff;
+    font-size: 48px;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+.headInfo .headInfo_title p{
+    color: #fff;
+    font-size: 16px;
+    margin-bottom: 50px;
+    line-height: 1.6;
+}
+
+.headInfo .headInfo_title a{
+    padding: 10px 18px;
+    color: #fff;
+    background-color: #ff5f60;
+    border-radius: 25px;
+}
+
+.headInfo .headInfo_img {
+    width: 55%;
+}
+
+.headInfo .headInfo_img img{
+    width: 100%;
+}
+
+
+/* Admission section  */
+.admission-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.admission-section .admission-section_email {
+    width: 50%;
+    margin-top: -150px;
+}
+
+.admission-section .admission-section_email .wrap {
+    width: 400px;
+    padding: 40px 30px 30px;
+    background-color: #ff5f60;
+    box-shadow: 0 -8px 0 #183251;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.admission-section .admission-section_email .wrap h3 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+    color: #fff;
+    position: relative;
+    padding-bottom: 10px;
+    margin-bottom: 25px;
+}
+
+.admission-section .admission-section_email .wrap h3::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 30%;
+    height: 1px;
+    background-color: #fff;
+}
+
+.admission-section .admission-section_email .wrap p {
+    color: #fff;
+    font-size: 22px;
+    opacity: .6;
+    margin-bottom: 12px;
+}
+
+.admission-section .admission-section_email .wrap form {
+    position: relative;
+    margin-left: -45px;
+}
+
+.admission-section .admission-section_email .wrap form input{
+    padding: 10px;
+    border: 0;
+    border-radius: 25px 0 0 25px;
+}
+
+.admission-section .admission-section_email .wrap form button{
+    border: 0;
+    padding: 8px 15px;
+    border-radius: 0 25px 25px 0;
+    outline: none;
+    background-color: #1f3148;
+    position: absolute;
+}
+
+.admission-section .admission-section_email .wrap form button img{
+    width: 15px;
+}
+
+
+.admission-section .admission-section_testimonial{
+    width: 50%;
+    margin-top: 35px;
+    text-align: center;
+}
+
+.admission-section .admission-section_testimonial p{
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 15px;
+    color: #000;
+}
+
+.admission-section .admission-section_testimonial span {
+    color: #fb8122;    
+}
+
+.admission-section .admission-section_testimonial .dot {
+    margin-top: 10px;
+}
+
+
+/* Welcome Section  */
+.welcome {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 100px;
+}
+
+.welcome .welcome-img {
+    width: 45%;
+}
+
+.welcome .welcome-img img{
+    width: 100%;
+}
+
+.welcome .welcome-text {
+    width: 45%;
+}
+
+.welcome .welcome-text h2 {
+    font-size: 32px;
+    font-weight: 600;
+    padding: 40px 0;
+    color: #333333;
+}
+
+.welcome .welcome-text p {
+    color: #8c8c8c;
+    font-size: 17px;
+    margin-bottom: 30px;
+    line-height: 1.5;
+}
+
+.welcome .welcome-text a {
+    display: inline-block;
+    padding: 10px 25px;
+    background-color:#ff5f60;
+    color: #fff;
+    border-radius: 25px;
+}
+
+
+/* Service Area  */
+.service-area {
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.service-area .service {
+    width: 31%;
+    text-align: center;
+}
+
+.service-area .service .icon img {
+    width: 200px;
+    vertical-align: middle;
+}
+
+.service-area .service h2 {
+    font-weight: 500;
+    font-size: 26px;
+    color: #333333;
+    padding:0 0 20px;
+}
+
+.service-area .service p {
+    padding: 0 15px;
+    color: #8c8c8c;
+    line-height: 1.5;
+}
+
+.footer {
+    margin-top: 70px;
+    padding: 20px 0;
+    border-top: 1px solid #c9c9c9;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer .copyright p {
+    color: #c9c9c9;
+}
+
+.footer .submenu a{
+    display: inline-block;
+    padding: 0 15px;
+    color: #c9c9c9;
+}
+
+.footer .submenu a:last-child {
+    padding-right: 0;
+}
+
+
+
+/* Responsive  */
+@media screen and (max-width: 1199.98px) {
+    .container {
+        width: 970px;
+    }
+}
+
+@media screen and (max-width: 991.98px) {
+    .container {
+        width: 710px;
+    }
+
+    .admission-section {
+        flex-direction: column;
+    }
+
+    .admission-section .admission-section_email {
+        width: 100%;
+        margin-top: 50px;
+    }
+
+    .admission-section .admission-section_email .wrap {
+        width: 100%;
+    }
+
+    .admission-section .admission-section_testimonial {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 767.98px) {
+    .container {
+        width: 100%;
+        padding: 0 20px;
+    }
+
+    .toggle {
+        display: block;
+    }
+
+    .navigation {
+        display: none;
+    }
+
+    .welcome {
+        flex-direction: column;
+    }
+
+    .welcome .welcome-img {
+        width: 100%;
+    }
+
+    .welcome .welcome-text {
+        width: 100%;
+    }
+
+    .service-area {
+        flex-direction: column;
+    }
+
+    .service-area .service {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 576.98px) {
+    .headInfo {
+        flex-direction: column-reverse;
+    }
+
+    .headInfo .headInfo_title {
+        width: 100%;
+    }
+
+    .headInfo .headInfo_img {
+        width: 100%;
+    }
+}
